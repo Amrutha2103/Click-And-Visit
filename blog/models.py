@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
 # from cloudinary.models import CloudinaryField
 
 
@@ -13,6 +14,13 @@ class Post(models.Model):
     body = models.TextField()
 
     def _str_(self):
-        return self.title + ' | ' + self.author
+        return self.title + ' | ' + self.author  
+
+    def get_absolute_url(self):
+        #return reverse('article-detail', args=(str(self.id)))
+        return reverse('home')
+
+
+
 
 
