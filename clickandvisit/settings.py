@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['click-and-visit-d848e552bf24.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-amrutha2103-clickandvis-rycwnn5bxj7.ws-eu105.gitpod.io', 'localhost']
 
 # Application definition
 
